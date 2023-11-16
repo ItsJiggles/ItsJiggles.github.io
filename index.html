@@ -33,23 +33,26 @@
             width: inherit;
         }
         .navicon {
-            background-color: red;
+            background-color: lightsalmon;
             border-radius: 10px;
-            width: 90%;
-            height: 90%;
+            width: 99%;
+            height: 100%;
             margin:auto;
             transition: 0.1s ease-in-out;
         }
         .navicon:hover {
-            background-color: blue;
+            background-color: salmon;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
     <div id="navbar">
-        <div id="messageboardlink" class="navicon" style="width: 100%; height: 100%;">
-            <a id="messageboardtext" class="navicontext" href="/dumb_message_board">stupid message board</a>
-        </div>
+        <a id="messageboardtext" class="navicontext" href="/dumb_message_board">
+            <div id="messageboardlink" class="navicon">
+            </div>
+        </a>
     </div>
     <div id="main">
         <span id="maintext">hello there my name is jiggles :D<br/><br/><a href="https://itsjiggles.github.io/epic">btw very epic page made by pancakehat</a></span>
