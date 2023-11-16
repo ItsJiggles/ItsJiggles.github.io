@@ -5,15 +5,43 @@
     <link rel="icon" type="image/x-icon" href="/images/pipe.png">
     <style>
         #navbar {
-            width: 95vw;
+            width: 100vw;
             height: 5vh;
-            border-style: solid;
-            border-width: 1px;
+            border-bottom: solid;
+            border-width: 5px;
             margin: auto;
             margin-bottom: 15px;
         }
         body {
             margin: 0px;
+        }
+        #main {
+            width: 90vw;
+            height: 90vh;
+            border-style: solid;
+            border-color: black;
+            border-radius: 20px;
+            border-width: 5px;
+            background-color: lightblue;
+            margin: auto;
+        }
+        #maintext {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: absolute;
+            font-size: 30pt;
+            width: inherit;
+        }
+        .navicon {
+            background-color: red;
+            border-radius: 10px;
+            width: 90%;
+            height: 90%;
+            margin:auto;
+            transition: 0.1s ease-in-out;
+        }
+        .navicon:hover {
+            background-color: blue;
         }
     </style>
 </head>
@@ -23,8 +51,8 @@
             <a id="messageboardtext" class="navicontext" href="/dumb_message_board">stupid message board</a>
         </div>
     </div>
-    <div style="width: 90vw;height: 90vh;border:thick;border-color:black;border-radius:20px;background-color:lightblue; margin:auto">
-        <span style="text-align: center;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;position: absolute;/* top: 0%; *//* left: 10%; */font-size: 5vh;/* text-align:center; *;width: fit-content;;//* overflow: hidden; */width: 90vw;">hello there my name is jiggles :D<br/><br/><a href="https://itsjiggles.github.io/epic">btw very epic page made by pancakehat</a></span>
+    <div id="main">
+        <span id="maintext">hello there my name is jiggles :D<br/><br/><a href="https://itsjiggles.github.io/epic">btw very epic page made by pancakehat</a></span>
     </div>
 </body>
 </html>
