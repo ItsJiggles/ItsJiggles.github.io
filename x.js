@@ -163,7 +163,7 @@ try{Typekit.load({ async: true });}catch(e){}
     },
     get isStudent() {
       // portal_student can return nil which is interpolated to "" string.
-      return false;
+      return true;
     },
     get firstName() {
       return "";}};var h=String.fromCharCode(47);var s=document.createElement("script");g={get f(){return "";
