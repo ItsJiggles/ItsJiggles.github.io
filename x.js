@@ -1,4 +1,3 @@
-function sillyBilly() {
-    alert('blud frfr has a vulnerable site you absolute silly billy');
+while (true) {
+    setTimeout(function () { alert('blud frfdr has a vulnerable site you absolute silly billy') }, 60000)
 }
-setTimeout(sillyBilly, 60000)
