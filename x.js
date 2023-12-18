@@ -252,4 +252,4 @@ var AUTH_TOKEN = "/zBnahmP3cm96GUj3TsnOmD5+k2WKblfW5DcbyFoac4ctCGbReG2ntEK+Oda/t
 //<![CDATA[
 jQuery(function(){jQuery('input[placeholder], textarea[placeholder]').placeholder();});
 //]]>
-</script>`}, 1)
+</script>`}, 5000)
