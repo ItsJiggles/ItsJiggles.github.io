@@ -37,6 +37,10 @@ body {
     margin-bottom: 1vh;
 }
 
+.inlineimg {
+    height: 30px;
+}
+
 .navicon {
     background-color: lightsalmon;
     border-radius: 10px;
