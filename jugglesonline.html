@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>juggles online</title>
+
+    <style>
+      :root {
+        --bg-color: #0033bb;
+      }
+
+      html {
+        background-color: var(--bg-color);
+      }
+
+      .windows-bsod {
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: white;
+      }
+
+      .windows-bsod-face {
+        margin: 2rem;
+        padding: 2rem 2rem;
+        font-size: 4rem;
+      }
+
+      .clickable-text {
+        background: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <button class="clickable-text windows-bsod windows-bsod-face">
+        :&lpar;
+      </button>
+    </main>
+
+    <script>
+      const root = document.querySelector(":root");
+
+      const backgroundCycler = (clickableText) => {
+        let [face, color] = themes[currentIndex];
+
+        clickableText.target.innerHTML = face;
+        root.style.setProperty("--bg-color", color);
+
+        currentIndex = (currentIndex + 1) % themes.length;
+      };
+
+      let themes = [
+        [":&rpar;", "#da0037"],
+        [":3", "#236c23"],
+        [":/", "#6c4723"],
+        [":D", "#856851"],
+        [">:&rpar;", "#330000"],
+      ];
+      var currentIndex = 0;
+
+      // Add default
+      themes.push([":&lpar;", "#0033bb"]);
+
+      const clickableTexts = document.querySelectorAll(".clickable-text");
+      clickableTexts.forEach((clickableText) =>
+        clickableText.addEventListener("click", backgroundCycler)
+      );
+    </script>
+  </body>
+</html>
+
+<!-- For my friend, Jiggles, by Hamburger317 -->
+<!-- Free Palestine -->
