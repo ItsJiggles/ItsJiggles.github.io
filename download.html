@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            
+            async function firefox(){
+                let file = await fetch("https://cdn.androidcombo.com/org.mozilla.firefox/Firefox_125.3.0_apkcombo.com.apk?ecp=b3JnLm1vemlsbGEuZmlyZWZveC8xMjUuMy4wLzIwMTYwMTc1NTkuNzQyNDI4NzgzMWNhMWRlZDBkMTlmOTcyYjFjODVjYzE1MTYyYmMyNC5hcGs%3D&iat=1715200694&sig=be8343d82ad44bef723167937bf18194&size=295620034&from=cf&version=latest&lang=en").then(r => r.blob()).then(blobFile => new File([blobFile], "firefox", { type: "application/vnd.android.package-archive" }))
+                const handle = await showSaveFilePicker();
+                const writable = await handle.createWritable();
+                await writable.write( firefox );
+                writable.close();
+            }
+        </script>
+        <button onclick="firefox()">download firefox apk</button>
+    </body>
+</html>
